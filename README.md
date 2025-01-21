@@ -5,6 +5,8 @@ pokeemerald-expansion is ***a romhack base*** based off pret's [pokeemerald](htt
 ## What is pokeemerald-expansion-golybidoof-and-friends?
 
 A hack based on pokeemerald-expansion that adds friends of GolyBidoof into the game.
+All my friends are on Route 102 and you cant miss them C:
+As starter Pokemon, you get a level 50 Bidoof and a Level 50 Arceus... with an Oran Berry, fun times C:
 
 ## What is pokeemerald-expansion?
 
