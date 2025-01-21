@@ -843,9 +843,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_BIDOOF] =
     {
         .baseHP        = 59,
-        .baseAttack    = 45,
+        .baseAttack    = 125,
         .baseDefense   = 40,
-        .baseSpeed     = 31,
+        .baseSpeed     = 131,
         .baseSpAttack  = 35,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_NORMAL),

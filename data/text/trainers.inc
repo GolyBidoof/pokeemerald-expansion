@@ -34,6 +34,116 @@ Route102_Text_CalvinRematchPostBattle:
 	.string "If you're going to get stronger,\n"
 	.string "I'll get stronger, too.$"
 
+
+Route102_Text_ChrryCloveIntro:
+	.string "<links a Twitter post from\n"
+	.string "a Japanese artist>\l"
+	.string "Clove clove clove clove!$"
+
+Route102_Text_ChrryCloveDefeated:
+	.string "Should have sticked to Valorant.\n"
+	.string "Oh well.$"
+
+Route102_Text_ChrryClovePostBattle:
+	.string "You are a bit better than\n"
+	.string "a certain toaster I've met before!$"
+
+Route102_Text_ChrryCloveRegister:
+	.string "I've been working hard at this since\n"
+	.string "I saw you before.\p"
+	.string "I'd like to battle you again, so can\n"
+	.string "you register me in your POKéNAV?$"
+
+Route102_Text_ChrryCloveRegisterShort:
+	.string "I'd like to battle you again, so can\n"
+	.string "you register me in your POKéNAV?$"
+
+Route102_Text_ChrryCloveRematchIntro:
+	.string "Ever since I lost to you, I desperately\n"
+	.string "trained my POKéMON.\l"
+	.string "You can't say no to my challenge!$"
+
+Route102_Text_ChrryCloveRematchDefeated:
+	.string "Arrgh, I lost…\n"
+	.string "Is my training method not right?$"
+
+Route102_Text_ChrryCloveRematchPostBattle:
+	.string "If you're going to get stronger,\n"
+	.string "I'll get stronger, too.$"
+
+Route102_Text_ToasterIntro:
+	.string "Minz minz minz minz?\n"
+	.string "Minz.\l"
+	.string "Get ready for some bread burning.$"
+
+Route102_Text_ToasterDefeated:
+	.string "I didn't dudududu enough.\n"
+	.string "I'll make sure to dudududu next time.$"
+
+Route102_Text_ToasterPostBattle:
+	.string ":cow_with_raised_eyebrow:$"
+
+Route102_Text_ToasterRegister:
+	.string "I've been working hard at this since\n"
+	.string "I saw you before.\p"
+	.string "I'd like to battle you again, so can\n"
+	.string "you register me in your POKéNAV?$"
+
+Route102_Text_ToasterRegisterShort:
+	.string "I'd like to battle you again, so can\n"
+	.string "you register me in your POKéNAV?$"
+
+Route102_Text_ToasterRematchIntro:
+	.string "Ever since I lost to you, I desperately\n"
+	.string "trained my POKéMON.\l"
+	.string "You can't say no to my challenge!$"
+
+Route102_Text_ToasterRematchDefeated:
+	.string "Arrgh, I lost…\n"
+	.string "Is my training method not right?$"
+
+Route102_Text_ToasterRematchPostBattle:
+	.string "If you're going to get stronger,\n"
+	.string "I'll get stronger, too.$"
+
+Route102_Text_ErmiiIntro:
+	.string "You know that I could've played\n"
+	.string "Balatro instead of fighting you?\l"
+	.string "Mario Kart DS is the best.$"
+
+Route102_Text_ErmiiDefeated:
+	.string "You've only won because Haruhi\n"
+	.string "was sick and couldn't come!$"
+
+Route102_Text_ErmiiPostBattle:
+	.string "Okay, give me some time\n"
+	.string "I'll add that to the\l"
+	.string "Mario Kart Toolbox.$"
+
+Route102_Text_ErmiiRegister:
+	.string "I've been working hard at this since\n"
+	.string "I saw you before.\p"
+	.string "I'd like to battle you again, so can\n"
+	.string "you register me in your POKéNAV?$"
+
+Route102_Text_ErmiiRegisterShort:
+	.string "I'd like to battle you again, so can\n"
+	.string "you register me in your POKéNAV?$"
+
+Route102_Text_ErmiiRematchIntro:
+	.string "Ever since I lost to you, I desperately\n"
+	.string "trained my POKéMON.\l"
+	.string "You can't say no to my challenge!$"
+
+Route102_Text_ErmiiRematchDefeated:
+	.string "Arrgh, I lost…\n"
+	.string "Is my training method not right?$"
+
+Route102_Text_ErmiiRematchPostBattle:
+	.string "If you're going to get stronger,\n"
+	.string "I'll get stronger, too.$"
+
+
 Route102_Text_AllenIntro:
 	.string "Did you just become a TRAINER?\n"
 	.string "We're both beginners!$"

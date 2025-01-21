@@ -58,6 +58,129 @@ Route102_EventScript_CalvinRematch::
 	msgbox Route102_Text_CalvinRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route102_EventScript_ChrryClove::
+	trainerbattle_single TRAINER_CHRRYCLOVE_1, Route102_Text_ChrryCloveIntro, Route102_Text_ChrryCloveDefeated, Route102_EventScript_ChrryCloveRegisterMatchCallAfterBattle
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_ChrryCloveRematch
+	setvar VAR_0x8004, TRAINER_CHRRYCLOVE_1
+	specialvar VAR_RESULT, IsTrainerRegistered
+	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_ChrryCloveTryRegister
+	msgbox Route102_Text_ChrryClovePostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route102_EventScript_ChrryCloveRegisterMatchCallAfterBattle::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_ChrryCloveRegisterMatchCall
+	release
+	end
+
+Route102_EventScript_ChrryCloveRegisterMatchCall::
+	msgbox Route102_Text_ChrryCloveRegisterShort, MSGBOX_DEFAULT
+	register_matchcall TRAINER_CHRRYCLOVE_1
+	release
+	end
+
+Route102_EventScript_ChrryCloveTryRegister::
+	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_ChrryCloveRegister
+	msgbox Route102_Text_ChrryClovePostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route102_EventScript_ChrryCloveRegister::
+	msgbox Route102_Text_ChrryCloveRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_CHRRYCLOVE_1
+	release
+	end
+
+Route102_EventScript_ChrryCloveRematch::
+	trainerbattle_rematch TRAINER_CHRRYCLOVE_1, Route102_Text_ChrryCloveRematchIntro, Route102_Text_ChrryCloveRematchDefeated
+	msgbox Route102_Text_ChrryCloveRematchPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route102_EventScript_Toaster::
+	trainerbattle_single TRAINER_TOASTER_1, Route102_Text_ToasterIntro, Route102_Text_ToasterDefeated, Route102_EventScript_ToasterRegisterMatchCallAfterBattle
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_ToasterRematch
+	setvar VAR_0x8004, TRAINER_TOASTER_1
+	specialvar VAR_RESULT, IsTrainerRegistered
+	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_ToasterTryRegister
+	msgbox Route102_Text_ToasterPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route102_EventScript_ToasterRegisterMatchCallAfterBattle::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_ToasterRegisterMatchCall
+	release
+	end
+
+Route102_EventScript_ToasterRegisterMatchCall::
+	msgbox Route102_Text_ToasterRegisterShort, MSGBOX_DEFAULT
+	register_matchcall TRAINER_TOASTER_1
+	release
+	end
+
+Route102_EventScript_ToasterTryRegister::
+	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_ToasterRegister
+	msgbox Route102_Text_ToasterPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route102_EventScript_ToasterRegister::
+	msgbox Route102_Text_ToasterRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_TOASTER_1
+	release
+	end
+
+Route102_EventScript_ToasterRematch::
+	trainerbattle_rematch TRAINER_TOASTER_1, Route102_Text_ToasterRematchIntro, Route102_Text_ToasterRematchDefeated
+	msgbox Route102_Text_ToasterRematchPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route102_EventScript_Ermii::
+	trainerbattle_single TRAINER_ERMII_1, Route102_Text_ErmiiIntro, Route102_Text_ErmiiDefeated, Route102_EventScript_ErmiiRegisterMatchCallAfterBattle
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_ErmiiRematch
+	setvar VAR_0x8004, TRAINER_ERMII_1
+	specialvar VAR_RESULT, IsTrainerRegistered
+	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_ErmiiTryRegister
+	msgbox Route102_Text_ErmiiPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route102_EventScript_ErmiiRegisterMatchCallAfterBattle::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_ErmiiRegisterMatchCall
+	release
+	end
+
+Route102_EventScript_ErmiiRegisterMatchCall::
+	msgbox Route102_Text_ErmiiRegisterShort, MSGBOX_DEFAULT
+	register_matchcall TRAINER_ERMII_1
+	release
+	end
+
+Route102_EventScript_ErmiiTryRegister::
+	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_ErmiiRegister
+	msgbox Route102_Text_ErmiiPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route102_EventScript_ErmiiRegister::
+	msgbox Route102_Text_ErmiiRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_ERMII_1
+	release
+	end
+
+Route102_EventScript_ErmiiRematch::
+	trainerbattle_rematch TRAINER_ERMII_1, Route102_Text_ErmiiRematchIntro, Route102_Text_ErmiiRematchDefeated
+	msgbox Route102_Text_ErmiiRematchPostBattle, MSGBOX_AUTOCLOSE
+	end
+	
 Route102_EventScript_Rick::
 	trainerbattle_single TRAINER_RICK, Route102_Text_RickIntro, Route102_Text_RickDefeated
 	msgbox Route102_Text_RickPostBattle, MSGBOX_AUTOCLOSE
