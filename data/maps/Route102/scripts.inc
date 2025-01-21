@@ -180,7 +180,48 @@ Route102_EventScript_ErmiiRematch::
 	trainerbattle_rematch TRAINER_ERMII_1, Route102_Text_ErmiiRematchIntro, Route102_Text_ErmiiRematchDefeated
 	msgbox Route102_Text_ErmiiRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
-	
+
+Route102_EventScript_Mustekalan::
+	trainerbattle_single TRAINER_MUSTEKALAN_1, Route102_Text_MustekalanIntro, Route102_Text_MustekalanDefeated, Route102_EventScript_MustekalanRegisterMatchCallAfterBattle
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_MustekalanRematch
+	setvar VAR_0x8004, TRAINER_MUSTEKALAN_1
+	specialvar VAR_RESULT, IsTrainerRegistered
+	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_MustekalanTryRegister
+	msgbox Route102_Text_MustekalanPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route102_EventScript_MustekalanRegisterMatchCallAfterBattle::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_MustekalanRegisterMatchCall
+	release
+	end
+
+Route102_EventScript_MustekalanRegisterMatchCall::
+	msgbox Route102_Text_MustekalanRegisterShort, MSGBOX_DEFAULT
+	register_matchcall TRAINER_MUSTEKALAN_1
+	release
+	end
+
+Route102_EventScript_MustekalanTryRegister::
+	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_MustekalanRegister
+	msgbox Route102_Text_MustekalanPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Route102_EventScript_MustekalanRegister::
+	msgbox Route102_Text_MustekalanRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_MUSTEKALAN_1
+	release
+	end
+
+Route102_EventScript_MustekalanRematch::
+	trainerbattle_rematch TRAINER_MUSTEKALAN_1, Route102_Text_MustekalanRematchIntro, Route102_Text_MustekalanRematchDefeated
+	msgbox Route102_Text_MustekalanRematchPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 Route102_EventScript_Rick::
 	trainerbattle_single TRAINER_RICK, Route102_Text_RickIntro, Route102_Text_RickDefeated
 	msgbox Route102_Text_RickPostBattle, MSGBOX_AUTOCLOSE

@@ -143,6 +143,65 @@ Route102_Text_ErmiiRematchPostBattle:
 	.string "If you're going to get stronger,\n"
 	.string "I'll get stronger, too.$"
 
+Route102_Text_MustekalanIntro:
+	.string "Hello everyone c:\n"
+	.string "I'll leave Sol on the side\l"
+	.string "for the battle!$"
+
+Route102_Text_MustekalanDefeated:
+	.string "So true bestie,\n"
+	.string "Hell yeah!$"
+
+Route102_Text_MustekalanPostBattle:
+	.string "Today's ponderous thought:\p"
+	.string "So I'm extremely fascinated\n"
+	.string "by early humans.\p"
+	.string "Pre-history,\n"
+	.string "Banging rocks together type shit.\p"
+	.string "We're talking 'has considered\n"
+	.string "getting Otzi's tattoos.'\p"
+	.string "And like. Man.\n"
+	.string "It's one of the wildest things\l"
+	.string "in the world to me that I live\l"
+	.string "in the same world Otzi did.\p"
+	.string "That some ancestor of mine,\n"
+	.string "countless ages ago, hunted with tools\l"
+	.string "knapped from flint.\p"
+	.string "Beneath the same moon,\n"
+	.string "the same stars, the same sun.\p"
+	.string "In the same shadow of\n"
+	.string "the same mountain,\l"
+	.string "by the whispering of the same river.\p"
+	.string "Pushed by the same drive to\n"
+	.string "live each day, hoping tomorrow's\l"
+	.string "better than yesterday.\p"
+	.string "All of life's joys and sorrows,\n"
+	.string "the same now as then.\p"
+	.string "I am utterly in love\n"
+	.string "with the human animal.$"
+
+Route102_Text_MustekalanRegister:
+	.string "I've been working hard at this since\n"
+	.string "I saw you before.\p"
+	.string "I'd like to battle you again, so can\n"
+	.string "you register me in your POKéNAV?$"
+
+Route102_Text_MustekalanRegisterShort:
+	.string "I'd like to battle you again, so can\n"
+	.string "you register me in your POKéNAV?$"
+
+Route102_Text_MustekalanRematchIntro:
+	.string "Ever since I lost to you, I desperately\n"
+	.string "trained my POKéMON.\l"
+	.string "You can't say no to my challenge!$"
+
+Route102_Text_MustekalanRematchDefeated:
+	.string "Arrgh, I lost…\n"
+	.string "Is my training method not right?$"
+
+Route102_Text_MustekalanRematchPostBattle:
+	.string "If you're going to get stronger,\n"
+	.string "I'll get stronger, too.$"
 
 Route102_Text_AllenIntro:
 	.string "Did you just become a TRAINER?\n"
